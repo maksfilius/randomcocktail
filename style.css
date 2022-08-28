@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Beckan Regular";
+    src: url("./beckan/Beckan-Regular.otf") format("opentype");
+    }
+
+@font-face {
+    font-family: "Kallimata";
+    src: url("./kallimata/KallimataScript.otf") format("opentype");
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Beckan Regular";
+    letter-spacing: 2px;
+}
+
+:root {
+    --color-1: #0B131C;
+    --color-2: #0A2648;
+    --color-3: #1E3957;
+    --color-4: #607FA5;
+    --color-5: #ffffff;
+}
+
+/* Container
+========= */
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1100px;
+    margin: 50px auto;
+}
+
+/* Intro
+===== */
+
+.intro {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0) url(./img/grunge-brick-wall-background.jpg) center no-repeat;
+    background-size: cover;
+    box-shadow: 20px 20px 150px 150px #000 inset;
+}
+
+.intro_item {
+    display: flex;
+    width: 33.3%;
+    height: 500px;
+    margin: auto;
+}
+
+img {
+    max-height: 100%;
+    margin: auto;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--color-5);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    border: 3px solid var(--color-5);
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 100%;
+    line-height: 35px;
+    margin: auto 20px;
+    letter-spacing: 3px;
+    transition: all 0.6s ease;
+    font-weight: 900;
+}
+
+.btn:hover {
+    background-color: var(--color-5);
+    color: var(--color-1);
+}
+
+/* Random 
+=======*/
+
+.random {
+    display: flex;
+    width: 100vw;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.category {
+    line-height: 30px;
+    margin: 0 100px;
+}
+
+.category form {
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    margin: 10px;
+}
+
+.selection_btn {
+    padding: 10px 40px;
+    border: 2px solid rgb(59, 56, 56);
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    line-height: 30px;
+    margin: 50px auto;
+    transition: all 0.6s ease;
+}
+
+.selection_btn:hover {
+    background-color: #fff;
+    color: var(--color-1);
+}
+
+.result {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 5px;
+}
+
+.result h1, p {
+    color: var(--color-5);
+    text-align: center;
+    margin: 5px auto;
+}
+
+.result p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#random_style {
+    font-family: "Kallimata";
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.result img {
+    width: 150px;
+    margin: 60px auto;
+}
+
+.new_coctail {
+    color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Filter 
+=======*/
+
+.filter {
+    display: flex;
+    width: 100vw;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+.filter_selection {
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+
+.filter_selection form {
+    font-family: 'Antic';
+}
+
+.coctails {
+    width: 75%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.coctails h1 {
+    text-align: center;
+}
+
+.filter_selection_items {
+    margin: 20px 60px;
+
+}
+
+#result_item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    justify-content: center;
+}
+
+.result_items li {
+    display: flex;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Antic';
+}

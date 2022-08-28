@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Poppins:wght@600&family=Work+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <title>Random Coctails</title>
+</head>
+<body>
+    <!-- Intro -->
+    
+    <div class="intro">
+        <div class="container">
+            <div class="intro_item">
+                <a href="#random" class="btn">Generate a random <br>coctail</a>
+            </div>
+            <div class="intro_item">
+                <img src="./img/Mohito.png">
+            </div>
+            <div class="intro_item">
+                <a href="#filter" class="btn">See all <br>coctails</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Random -->
+
+    <div class="random" id="random">
+        <div class="container">
+            <div class="selection">
+                <div class="category">
+                    <h2>Choose category</h2>
+                    <form name="category" action="" method="get">
+                        <input type="radio" name="category" id="unforgettables" value="unfog" checked="checked" />The Unforgettables<br />
+                        <label for="unforgettables"></label>
+                        <label><input type="radio" name="category" id="classic" value="classic" />Contemporary Classics<br /></label>
+                        <label><input type="radio" name="category" id="new_era" value="newEra" />New Era Drinks<br /></label>
+                    </form>
+                </div>
+                <div class="category">
+                    <h2>Choose the taste of the drink</h2>
+                    <form name="taste" action="" method="get">
+                        <label><input type="radio" name="taste" id="sweet" value="sweet" checked="checked" />Sweet<br /></label>
+                        <label><input type="radio" name="taste" id="sour" value="sour" />Sour<br /></label>
+                        <label><input type="radio" name="taste" id="citrus" value="citrus" />Citrus<br /></label>
+                        <label><input type="radio" name="taste" id="spicy" value="spicy" />Spicy<br /></label>
+                        <label><input type="radio" name="taste" id="bitter" value="bitter" />Bitter<br /></label>
+                    </form>
+                </div>
+                <button id="random_btn" class="selection_btn" type="button">Get cocktail</button>
+            </div>
+            <div class="result">
+                <h1><span id="random_style">Random</span> cocktail generator</h1>
+                <img src="./img/OldFashioned.png">
+                <p id="your_cocktail">Your cocktail is</p>
+                <p id="dots">...</p>
+                <p class="new_coctail" id="display"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter -->
+
+    <div class="filter" id="filter">
+        <div class="container">
+            <div class="filter_selection">
+                <div class="filter_selection_items">
+                    <h2>Main ingredients</h2>
+                    <form name="main_ingredients" action="" method="get" id="base">
+                        <label><input type="radio" name="main_ingredients" id="all" value="all" checked="checked"/>All<br /></label>
+                        <label><input type="radio" name="main_ingredients" id="vodka" value="vodka" />Vodka<br /></label>
+                        <label><input type="radio" name="main_ingredients" id="gin" value="gin" />Gin<br /></label>
+                        <label><input type="radio" name="main_ingredients" id="whiskey" value="whiskey" />Whiskey<br /></label>
+                        <label><input type="radio" name="main_ingredients" id="cognaq" value="cognac" />Cognac<br /></label>
+                        <label><input type="radio" name="main_ingredients" id="rum" value="rum" />Rum<br /></label>
+                        <label><input type="radio" name="main_ingredients" id="brandy" value="tequila" />Tequila<br /></label>
+                    </form>
+                </div>
+                <div class="filter_selection_items">
+                    <h2>Volume</h2>
+                    <form name="volume" action="" method="get">
+                        <label><input type="radio" name="volume" id="all" value="all" checked="checked"/>All<br /></label>
+                        <label><input type="radio" name="volume" id="long" value="long" />Long<br /></label>
+                        <label><input type="radio" name="volume" id="short" value="short" />Short<br /></label>
+                    </form>
+                </div>
+                <div class="filter_selection_items">
+                    <h2>Time</h2>
+                    <form name="time" action="" method="get">
+                        <label><input type="radio" name="time" id="all" value="all" checked="checked"/>All<br /></label>
+                        <label><input type="radio" name="time" id="any_time" value="anytime"  />Any time<br /></label>
+                        <label><input type="radio" name="time" id="aperitif" value="aperitif" />Aperitif<br /></label>
+                        <label><input type="radio" name="time" id="digestif" value="digestif" />Digestif<br /></label>
+                    </form>
+                </div>
+            </div>
+            <div class="coctails">
+                <h1>List of cocktails</h1>
+                <div class="result_items">
+                    <ul id="result_item"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./cocktails.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
