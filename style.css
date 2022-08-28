@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+<<<<<<< HEAD
+=======
+    color: #000;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 }
 
 @font-face {
@@ -13,12 +17,16 @@
     src: url("./kallimata/KallimataScript.otf") format("opentype");
     }
 
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
+=======
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 body {
     margin: 0px;
     padding: 0px;
     font-family: "Beckan Regular";
+<<<<<<< HEAD
     letter-spacing: 2px;
 }
 
@@ -30,6 +38,12 @@ body {
     --color-5: #ffffff;
 }
 
+=======
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 /* Container
 ========= */
 
@@ -37,8 +51,13 @@ body {
     display: flex;
     width: 100%;
     max-width: 1200px;
+<<<<<<< HEAD
     min-width: 1100px;
     margin: 50px auto;
+=======
+    margin: auto;
+    /* padding: 0 15px;     */
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 }
 
 /* Intro
@@ -57,7 +76,10 @@ body {
     display: flex;
     width: 33.3%;
     height: 500px;
+<<<<<<< HEAD
     margin: auto;
+=======
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 }
 
 img {
@@ -65,6 +87,7 @@ img {
     margin: auto;
 }
 
+<<<<<<< HEAD
 .btn {
     text-decoration: none;
     color: var(--color-5);
@@ -86,6 +109,27 @@ img {
 .btn:hover {
     background-color: var(--color-5);
     color: var(--color-1);
+=======
+.intro_btn {
+    border: 2px solid rgb(59, 56, 56);
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: rgb(178, 194, 7);
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: "Beckan Regular";
+    font-size: 20px;
+    width: 100%;
+    height: 100px;
+    line-height: 30px;
+    margin: auto 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 }
 
 /* Random 
@@ -94,11 +138,16 @@ img {
 .random {
     display: flex;
     width: 100vw;
+<<<<<<< HEAD
+=======
+    height: 100vh;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
     background: rgb(0, 0, 0);
     background-size: cover;
 }
 
 .selection {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -108,12 +157,28 @@ img {
 }
 
 .category {
+=======
+    width: 50%;
+    background-color: #fff;
+    color: #000;
+    align-items: center;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.category {
+    margin: auto;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
     line-height: 30px;
     margin: 0 100px;
 }
 
 .category form {
+<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
+=======
+    font-family: 'Antic', sans-serif;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 }
 
 input {
@@ -126,6 +191,7 @@ input {
     border-radius: 30px;
     text-decoration: none;
     text-transform: uppercase;
+<<<<<<< HEAD
     background-color: var(--color-1);
     color: var(--color-5);
     letter-spacing: 3px;
@@ -141,6 +207,20 @@ input {
 .selection_btn:hover {
     background-color: #fff;
     color: var(--color-1);
+=======
+    background-color: rgb(6, 6, 110);
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: "Beckan Regular";
+    font-size: 20px;
+    width: 320px;
+    cursor: pointer;
+    line-height: 30px;
+    margin: 50px auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 }
 
 .result {
@@ -150,6 +230,7 @@ input {
     letter-spacing: 5px;
 }
 
+<<<<<<< HEAD
 .result h1, p {
     color: var(--color-5);
     text-align: center;
@@ -160,6 +241,11 @@ input {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 40px;
+=======
+.result h1 {
+    color: #fff;
+    text-align: center;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 }
 
 #random_style {
@@ -171,6 +257,7 @@ input {
 
 .result img {
     width: 150px;
+<<<<<<< HEAD
     margin: 60px auto;
 }
 
@@ -179,6 +266,17 @@ input {
     max-width: 500px;
     margin: 0 auto;
     padding-top: 20px;
+=======
+    margin: auto;
+}
+
+.new_coctail {
+    color: red;
+    max-width: 400px;
+    margin: auto;
+    height: 150px;
+    padding-top: 25px;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
     text-align: center;
 }
 
@@ -188,14 +286,26 @@ input {
 .filter {
     display: flex;
     width: 100vw;
+<<<<<<< HEAD
+=======
+    height: 100vh;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
     background: rgb(0, 0, 0);
     background-size: cover;
 }
 
 .filter_selection {
+<<<<<<< HEAD
     background-color: #fff;
     border-radius: 20px;
     margin-right: 40px;
+=======
+    width: 25%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 40px;
+    /* color: #000; */
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 }
 
 .filter_selection form {
@@ -213,24 +323,42 @@ input {
 }
 
 .filter_selection_items {
+<<<<<<< HEAD
     margin: 20px 60px;
+=======
+    text-align: left;
+    margin: 20px 50px;
+    line-height: 30px;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 
 }
 
 #result_item {
     display: flex;
     flex-wrap: wrap;
+<<<<<<< HEAD
     padding: 0 40px;
     justify-content: center;
+=======
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
 }
 
 .result_items li {
     display: flex;
+<<<<<<< HEAD
     width: 160px;
     height: 50px;
     text-align: center;
     border: #000 solid 1px;
     border-radius: 10px;
+=======
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    align-content: space-between;
+>>>>>>> 3b5595a6512a9af96e353215810f9c67360cca7a
     margin: 5px;
     align-items: center;
     justify-content: center;
